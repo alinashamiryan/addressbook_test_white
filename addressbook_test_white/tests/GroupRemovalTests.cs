@@ -20,8 +20,6 @@ namespace addressbook_test_white
                 {
                     Name = "Group1"
                 });
-
-
                 oldGroups = app.Groups.GetGroupList();
             }
             app.Groups.Remove(0);
@@ -30,7 +28,6 @@ namespace addressbook_test_white
             oldGroups.Sort();
             newGroups.Sort();
             Assert.AreEqual(oldGroups, newGroups);
-
         }
     }
 }
